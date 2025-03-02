@@ -1,0 +1,229 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body {
+  background-image: url(/assets/Low\ Poly\ Landscape\ [1920\ x\ 1080].jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* position: fixed; */
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  color: whitesmoke;
+}
+h1 {
+  text-align: center;
+  padding-top: 10px;
+}
+.tab-container {
+  max-width: 550px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 550px;
+  cursor: pointer;
+}
+.tab {
+  font-size: 1.2rem;
+  letter-spacing: 0.875px;
+  padding: 5px 8px;
+  margin-bottom: 3rem;
+}
+.tab.current-tab {
+  background-color: rgba(183, 171, 171, 0.5);
+  border-radius: 4px;
+}
+/* .weather-container {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block: 4rem; 
+} */
+.btn {
+  /*default styling unset */
+  all: unset;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: rgba(183, 171, 171, 0.5);
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.sub-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* horizontally center */
+}
+
+.grant-location-container {
+  display: none;
+}
+.grant-location-container img {
+  margin-bottom: 2rem;
+}
+.grant-location-container.active {
+  display: flex;
+}
+.grant-location-container p:first-of-type {
+  font-size: 1.95rem;
+  font-weight: 600;
+}
+.grant-location-container p:last-of-type {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-top: 0.75rem;
+  margin-bottom: 1.75rem;
+  letter-spacing: 0.75px;
+}
+.loading-container {
+  display: none;
+}
+.loading-container.active {
+  display: flex;
+}
+.loading-container p {
+  text-transform: uppercase;
+}
+
+.user-info-container {
+  display: none;
+}
+.user-info-container.active {
+  display: flex;
+}
+.name {
+  margin-top: rem;
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  gap: 0 0.5rem;
+  margin-bottom: 1rem;
+}
+.name p {
+  font-size: 3rem;
+  font-weight: 500;
+}
+.name img {
+  width: 30px;
+  height: 25px;
+  max-width: 40px;
+  max-height: 30px;
+}
+
+.user-info-container p[data-weatherDesc] {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.user-info-container img {
+  width: 90px;
+  height: 90px;
+}
+
+.user-info-container p[data-temp] {
+  font-size: 2.75rem;
+  font-weight: 500;
+}
+.parameter-container {
+  width: 90%;
+  display: flex;
+  gap: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0rem;
+}
+.parameter {
+  display: flex;
+  flex-direction: column;
+  width: 200px; /* Fixed width */
+  height: 150px; /* Fixed height */
+  background-color: rgba(249, 240, 240, 0.5);
+  border-radius: 5px;
+  margin: 0.5rem;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center; /* Centering content */
+  box-sizing: border-box; /* Ensures padding doesn’t affect width */
+}
+
+.parameter img {
+  width: 60px;
+  height: 60px;
+}
+.parameter p:first-of-type {
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 2px;
+}
+.parameter p:last-of-type {
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.form-container {
+  display: none;
+  width: 90%;
+  max-width: 550px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  gap: 0 10px;
+  margin-bottom: rem;
+}
+.form-container.active {
+  display: flex;
+}
+.form-container input {
+  all: unset;
+  width: calc(100% - 80px);
+  height: 40px;
+  padding: 0 11px;
+  background-color: rgba(183, 171, 171, 0.5);
+  border-radius: 6px;
+}
+.form-container input::placeholder {
+  color: white;
+}
+.form-container input:focus {
+  outline: 3px solid white;
+}
+.form-container .btn {
+  padding: unset;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  margin-bottom: 1px;
+}
+
+/* .tab.current-tab{
+    background-color: rgba(219, 226 , 239, 0.5);
+    border-radius: 4px;
+}
+
+.form-container.active{
+    scale: 1;
+    opacity: 1;
+    |
+    display:flex ;
+} */
